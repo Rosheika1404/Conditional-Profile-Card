@@ -46,9 +46,12 @@ function render(variables = {}) {
   if (variables.twitter === null) {
     variables.twitter = "MingoOakley";
   }
-  if (variables.github !== "Rosheika1404") {
-    variables.github = "Rosheika1404";
-  }
+  //   if (variables.github !== "Rosheika1404") {
+  //     variables.github = "Rosheika1404";
+  //   }
+  let github = "rosheika1404";
+  if (variables.github !== "alesanchezr") github = variables.github;
+
   if (variables.linkedin !== "roakleymingo") {
     variables.linkedin = "roakleymingo";
   }
@@ -68,7 +71,7 @@ function render(variables = {}) {
           <h3>${variables.city}, ${variables.country}</h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="https://twitter.com/${variables.twitter}"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/${variables.github}"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://github.com/${github}"><i class="fa fa-github"></i></a></li>
             <li><a href="https://linkedin.com/in/${variables.linkedin}"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${variables.instagram}"><i class="fa fa-instagram"></i></a></li>
           </ul>
