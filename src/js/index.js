@@ -35,7 +35,7 @@ function render(variables = {}) {
     variables.lastname = "lastname";
   }
   if (variables.city === null) {
-    variables.role = "Miami";
+    variables.city = "Miami";
   }
   if (variables.country === null) {
     variables.country = "USA";
